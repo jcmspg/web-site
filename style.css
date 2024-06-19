@@ -1,0 +1,306 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: futura-pt, sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    z-index: 10;
+    background-color: white;
+}
+
+nav .logo {
+    width: 150px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+    flex: 2;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    min-height: inherit;
+    padding: 10px;
+    transition: background 0.3s ease;
+    background-color: white;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+nav ul li ul li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+    color: black;
+}
+
+nav ul li:hover {
+    background-color:rgb(0, 186, 188);
+    color: white;
+}
+.lang {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.lang button {
+    background-color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: none;
+    height: 100%;
+}
+
+.lang button:hover {
+    background-color:rgb(0, 186, 188);
+    color : white;
+
+}
+
+.header::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.2);
+    background-size: cover;
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content p:not(.card p) {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.content {
+    background-position: center;
+    background-size: cover;
+       
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    min-height: 1000px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.content.focus{
+    opacity: 1;
+}
+
+.content h2 {
+    text-align: left;
+    margin-top: 20px;
+    color: white;
+}
+
+
+.card {
+    flex: 0 0 auto;
+    border: 2px solid rgb(0, 186, 188);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    padding: 20px;
+    min-height: 300px;
+    width: 200px;
+    background-color: white;
+    user-select: none;
+    border-radius: 10px;
+}
+
+.card h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: left;
+    color: rgb(0, 186, 188)
+}
+
+.card p {
+    font-size: 14px;
+    text-align: left;
+}
+
+.card .date {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(0, 186, 188);
+}
+
+.card .more {
+    color: rgb(0, 186, 188);
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+
+.card :hover {
+    cursor: pointer;
+}
+
+
+.card button {
+    background-color:rgb(0, 186, 188);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card button:hover {
+    background-color:white;
+    color: rgb(0, 186, 188);
+}
+
+.card .date {
+    font-size: 20px;
+    color: rgb(0, 186, 188);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 900;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+.partner {
+    flex: 0 0 auto;
+    border: 2px solid rgb(0, 186, 188);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    padding: 20px;
+    width: 200px;
+    background-color: white;
+    user-select: none;
+    border-radius: 10px;
+}
+
+.partner img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.partner h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
+    color: rgb(0, 186, 188);
+    text-align: center;
+}
+
+.partner p {
+    font-size: 14px;
+    text-align: left;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    max-width: 300px;
+}
+
+.footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}

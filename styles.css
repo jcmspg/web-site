@@ -1,0 +1,116 @@
+body {
+    font-family: "Futura PT", sans-serif;
+    background-image: url(resources/Picture_Library/197A6324.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
+    overflow-y: scroll;
+}
+
+header {
+    background-color: azure;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+#nav_bar {
+    background-color: azure;
+    color: white;
+    padding: 0;
+    text-align: center;
+}
+
+#master_container {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flexbox;
+    text-align: center;
+    margin: 5px;
+}
+
+#footer {
+    background-color: #04809f;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+#footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+#footer a:hover {
+    color: #00babc;
+}
+
+.title {
+    font-family: 'Futura PT', sans-serif;
+    font-size: 2em;
+    color: #00babc;
+    padding: 1em;
+    text-align: center;
+}
+
+.lang {
+    list-style: none;
+    display: flex;
+    float: right;
+}
+
+.lang li a {
+    display: inline;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.lang li a:hover {
+    background-color: #00babc;
+    color: white;
+}
+
+.nav_list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav_list a:hover {
+    background-color: #00babc;
+    color: white;
+}
+
+.nav_list a {
+    color: #04809f;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: flex;
+}
+
+.description {
+    font-family: 'Futura PT', sans-serif;
+    font-size: 1em;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
